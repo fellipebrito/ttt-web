@@ -85,8 +85,31 @@ cutline.css                  ← shared landing stylesheet (both reference it)
 cutline-screens.css          ← app-screen styles for the Screenshots section
 Cut Line - App Screens.html  ← studio reference for the 3 app screens (not served)
 cutline-mockups.jsx          ← React port of the 3 screens (if site goes React)
+og-cutline.png               ← 1200×630 share image (beta) — the hero nameplate
+og-cutline-golive.png        ← 1200×630 share image (go-live, no "beta" chip)
+og.html / og-golive.html     ← source templates for the share images (regen below)
+favicon-512.png / -32.png    ← "CL" plate favicon · apple-touch-icon.png (180)
+favicon.html                 ← source template for the favicon
 fonts/                       ← Space Mono
 ```
+
+**Social / SEO share image (WhatsApp, iMessage, Facebook, X).** Each landing
+page carries full Open Graph + Twitter Card tags with **absolute** image URLs, so
+pasting the link shows the Cut Line hero nameplate. The cards are rendered from
+the real design system — to regenerate after a copy change, edit `og.html` (or
+`og-golive.html` / `favicon.html`) and run headless Chrome:
+
+```sh
+CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+"$CHROME" --headless --disable-gpu --force-device-scale-factor=2 \
+  --window-size=1200,630 --screenshot=og-raw.png "file://$PWD/og.html"
+sips -z 630 1200 og-raw.png --out og-cutline.png   # downscale 2× → crisp 1200×630
+```
+
+Beta uses `og-cutline.png` (with the **Now in beta** chip); the go-live page
+uses `og-cutline-golive.png` (chip removed). If you re-host under a different
+URL, update the absolute `og:image` / `og:url` / `canonical` values in both HTML
+heads — WhatsApp will not resolve relative image paths.
 
 **Screenshots section.** The three phone mockups in the "Nine holes. One
 question." section are the real app flows — **New Session · Log a Putt · Make
