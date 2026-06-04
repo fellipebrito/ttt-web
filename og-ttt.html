@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>TTT OG</title>
+<style>
+@font-face{font-family:"Space Mono";font-weight:400;src:url("fonts/SpaceMono_400Regular.ttf") format("truetype");}
+@font-face{font-family:"Space Mono";font-weight:700;src:url("fonts/SpaceMono_700Bold.ttf") format("truetype");}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1200px;height:630px}
+body{font-family:"Space Mono",monospace;background:#467740;color:#FFF8E3;position:relative;overflow:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(900px 520px at 86% -8%, rgba(255,214,110,0.22), transparent 60%),
+  radial-gradient(760px 520px at -6% 70%, rgba(53,94,47,0.55), transparent 60%);}
+body::after{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,transparent 0 78px,rgba(255,248,227,0.04) 78px 80px);}
+.card{position:relative;height:100%;display:flex;flex-direction:column;justify-content:center;gap:26px;padding:64px 72px}
+.eyebrow{display:flex;align-items:center;gap:11px;font-size:16px;letter-spacing:0.22em;text-transform:uppercase;font-weight:700;color:#FFD66E}
+.eyebrow .dot{width:11px;height:11px;background:#FFD66E;box-shadow:0 0 0 4px rgba(255,214,110,0.25)}
+h1{font-size:78px;line-height:0.98;letter-spacing:-0.02em;font-weight:700;color:#FFF8E3}
+h1 .accent{color:#FFD66E}
+.sub{font-size:25px;line-height:1.4;color:#FFF8E3;opacity:0.86;max-width:30ch}
+.logo{height:60px;width:auto}
+.store{display:flex;gap:12px;margin-top:4px}
+.chip{font-size:16px;letter-spacing:0.08em;font-weight:700;color:#1D321B;background:#FFD66E;border:3px solid #1D321B;box-shadow:4px 4px 0 rgba(0,0,0,.45);padding:10px 16px}
+.chip.dark{background:#111;color:#fff;border-color:#000}
+</style></head>
+<body><div class="card">
+  <div class="eyebrow"><span class="dot"></span>Now on iOS &amp; Android</div>
+  <h1>Practice,<br/>but make it a <span class="accent">game.</span></h1>
+  <div class="sub">Career mode, skill games, and free-practice drills. Built by tour pros.</div>
+  <div class="store"><span class="chip dark">App Store</span><span class="chip dark">Google Play</span><span class="chip">Free</span></div>
+</div></body></html>
