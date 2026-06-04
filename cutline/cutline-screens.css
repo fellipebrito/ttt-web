@@ -1,0 +1,189 @@
+/* ============================================================
+   CUT LINE — App screen styles (shared)
+   The three approved app flows, re-rendered on the Tee Time
+   Trainer design system. Native size 390×844 (iPhone).
+   Used by: Cut Line - App Screens.html (studio), the PNG
+   export harness, and the landing page screenshot frames.
+   ============================================================ */
+
+@font-face{font-family:"Space Mono";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/SpaceMono_400Regular.ttf") format("truetype");}
+@font-face{font-family:"Space Mono";font-style:normal;font-weight:700;font-display:swap;src:url("fonts/SpaceMono_700Bold.ttf") format("truetype");}
+
+:root{
+  --cream:#FFF8E3;
+  --cream-2:#FFF9E9;
+  --felt:#467740;
+  --felt-600:#3F6C39;
+  --felt-700:#32542D;
+  --felt-800:#274123;
+  --felt-900:#1E3719;
+  --gold:#FFD66E;
+  --gold-deep:#E8B123;
+  --ink:#23201C;
+  --ink-soft:#5B554E;
+  --made:#2D8E2A;
+  --made-br:#86E08A;
+  --missed:#E25A45;
+  --mono:"Space Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+
+.screen *{box-sizing:border-box;}
+
+/* ── the phone screen (raw, croppable, 390×844) ───────── */
+.screen{
+  width:390px;height:844px;
+  background:var(--felt);
+  position:relative;
+  overflow:hidden;
+  display:flex;flex-direction:column;
+  font-family:var(--mono);
+  color:var(--cream);
+}
+
+/* iOS status bar */
+.sb{height:54px;flex:none;display:flex;align-items:center;justify-content:space-between;
+  padding:16px 30px 0;color:var(--cream);}
+.sb__time{font-size:17px;font-weight:700;letter-spacing:0.01em;}
+.sb__right{display:flex;align-items:center;gap:7px;}
+.sb__dots{display:flex;gap:2.5px;align-items:flex-end;}
+.sb__dots i{width:4px;height:4px;border-radius:50%;background:var(--cream);opacity:0.55;}
+.sb svg{display:block;}
+
+/* shared screen body */
+.body{flex:1;display:flex;flex-direction:column;min-height:0;}
+
+/* top nav row */
+.nav{display:grid;grid-template-columns:44px 1fr 44px;align-items:center;padding:6px 22px 0;}
+.nav__back,.nav__close{display:flex;align-items:center;gap:8px;color:var(--cream);background:none;border:0;padding:0;cursor:pointer;font-family:var(--mono);}
+.nav__chev{font-size:26px;font-weight:700;line-height:1;}
+.nav__x{font-size:24px;font-weight:700;line-height:1;}
+.nav__title{text-align:center;font-size:14px;letter-spacing:0.32em;text-transform:uppercase;font-weight:700;color:rgba(255,248,227,0.5);}
+.nav__closetxt{font-size:18px;letter-spacing:0.18em;font-weight:700;text-transform:uppercase;color:var(--cream);}
+
+.fill{flex:1;}
+
+/* ════ SCREEN 1 — NEW SESSION ════ */
+.s1{padding:0 26px 34px;}
+.s1__q{margin:34px 0 0;font-size:32px;line-height:1.2;font-weight:700;color:var(--cream);letter-spacing:-0.02em;text-wrap:balance;}
+.s1__opts{display:flex;flex-direction:column;align-items:center;gap:14px;}
+.optrow{display:flex;gap:10px;justify-content:center;}
+.opt{
+  min-width:76px;padding:18px 10px;text-align:center;white-space:nowrap;
+  font-size:20px;font-weight:700;letter-spacing:0.01em;
+  color:var(--cream);background:transparent;
+  border:2px solid var(--cream);
+}
+.opt--on{
+  background:var(--gold);color:var(--ink);
+  border:3px solid var(--ink);
+  box-shadow:3px 3px 0 var(--felt-900);
+}
+.s1__steps{text-align:center;font-size:18px;letter-spacing:0.02em;color:rgba(255,248,227,0.5);margin-top:22px;}
+
+.btn-primary{
+  display:flex;align-items:center;justify-content:center;gap:14px;width:100%;
+  background:var(--gold);color:var(--ink);
+  border:3px solid var(--ink);
+  box-shadow:5px 6px 0 var(--felt-900);
+  padding:22px;font-size:23px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;
+  cursor:pointer;font-family:var(--mono);
+}
+.btn-primary .tri{font-size:0.8em;}
+
+/* ════ SCREEN 2 — LOG A PUTT ════ */
+.s2{padding:0 26px 30px;}
+.prog{display:flex;gap:7px;margin:14px 4px 0;}
+.prog span{flex:1;height:14px;background:var(--felt-700);}
+.prog span.cur{background:transparent;border:2px solid var(--gold);position:relative;}
+.prog span.cur::after{content:"";position:absolute;inset:2px;background:var(--gold);}
+.s2__dist{text-align:center;margin-top:54px;display:flex;align-items:flex-end;justify-content:center;gap:6px;line-height:0.82;}
+.s2__num{font-size:168px;font-weight:700;color:var(--gold);letter-spacing:-0.04em;}
+.s2__ft{font-size:46px;font-weight:700;color:var(--gold);letter-spacing:0.04em;padding-bottom:18px;}
+.s2__steps{text-align:center;font-size:20px;letter-spacing:0.02em;color:rgba(255,248,227,0.46);margin-top:18px;}
+.s2__choices{display:flex;flex-direction:column;gap:16px;margin-top:auto;}
+.choice{
+  display:flex;align-items:center;gap:22px;
+  background:var(--felt-800);
+  border:2px solid var(--made-br);
+  box-shadow:4px 5px 0 var(--felt-900);
+  padding:18px;
+}
+.choice__chip{
+  width:64px;height:64px;flex:none;display:flex;align-items:center;justify-content:center;
+  font-size:30px;font-weight:700;color:var(--ink);
+  border:2px solid var(--ink);background:var(--made-br);
+}
+.choice__lbl{font-size:22px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--cream);white-space:nowrap;}
+.choice--two{border-color:var(--gold);}
+.choice--two .choice__chip{background:var(--gold);}
+.choice--three{border-color:var(--missed);}
+.choice--three .choice__chip{background:var(--missed);color:var(--ink);font-size:24px;}
+
+/* ════ SCREEN 3 — MAKE THE CUT (result) ════ */
+.s3{padding:4px 22px 22px;display:flex;flex-direction:column;gap:13px;}
+.s3 .nav{padding-left:0;padding-right:0;grid-template-columns:1fr;}
+.s3 .nav__close{justify-self:start;}
+.card{
+  background:var(--cream);color:var(--ink);
+  border:3px solid var(--ink);
+  box-shadow:4px 4px 0 var(--ink);
+  padding:20px 20px 22px;
+  display:flex;flex-direction:column;gap:14px;
+}
+.score{text-align:center;}
+.score__k{font-size:12px;letter-spacing:0.34em;text-transform:uppercase;font-weight:700;color:#8AA487;}
+.score__n{font-size:84px;line-height:0.82;font-weight:700;color:var(--ink);letter-spacing:-0.03em;margin:6px 0;}
+.score__u{font-size:13px;letter-spacing:0.34em;text-transform:uppercase;font-weight:700;color:#8AA487;}
+
+.cut-banner{
+  background:var(--made);color:var(--cream);
+  border:3px solid var(--ink);box-shadow:3px 3px 0 var(--ink);
+  padding:13px;text-align:center;
+}
+.cut-banner__main{display:flex;align-items:center;justify-content:center;gap:12px;font-size:20px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;}
+.cut-banner__streak{margin-top:6px;font-size:13px;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;color:var(--gold);}
+
+.sc{border:2px solid var(--ink);padding:13px 12px 11px;}
+.sc__top{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:700;color:var(--ink-soft);white-space:nowrap;}
+.sc__grid{display:grid;grid-template-columns:repeat(9,1fr);margin-top:11px;}
+.sc__col{display:flex;flex-direction:column;align-items:center;gap:7px;}
+.sc__i{font-size:11px;font-weight:700;color:var(--ink-soft);}
+.sc__v{font-size:15px;font-weight:700;color:var(--ink);width:28px;height:28px;display:flex;align-items:center;justify-content:center;}
+.sc__v.circ{border:2px solid var(--ink);border-radius:50%;}
+.sc__v.box{border:2px solid var(--missed);color:var(--missed);}
+.sc__cap{text-align:center;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:var(--ink-soft);margin-top:11px;}
+
+.plate{align-self:center;border:2px solid var(--ink);box-shadow:2px 2px 0 var(--ink);
+  padding:8px 22px 10px;text-align:center;background:var(--cream);}
+.plate__k{font-size:11px;letter-spacing:0.28em;text-transform:uppercase;font-weight:700;color:var(--made);
+  border-bottom:2px solid var(--ink);padding-bottom:6px;margin-bottom:6px;}
+.plate__wm{font-size:24px;font-weight:700;letter-spacing:0.1em;}
+.plate__wm .cut{color:var(--ink);}
+.plate__wm .line{color:var(--gold-deep);}
+
+.btn-share{
+  display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
+  background:transparent;color:var(--cream);
+  border:2px solid var(--cream);
+  padding:18px;font-size:17px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;
+  cursor:pointer;font-family:var(--mono);
+}
+
+/* studio adds a drop shadow around the raw screen */
+.screen--studio{box-shadow:0 32px 60px -18px rgba(0,0,0,0.6), 0 0 0 1px rgba(0,0,0,0.4);}
+
+/* ── website: scale the native 390×844 screen into a phone slot ──
+   The screen renders at full native size then scales down, so all
+   type and borders stay razor-sharp at any DPI. */
+.cl-phone{
+  position:relative;box-sizing:content-box;
+  width:300px;height:649px;flex:none;
+  border:4px solid var(--ink);
+  box-shadow:6px 6px 0 var(--felt-900);
+  overflow:hidden;background:var(--felt);
+}
+.cl-phone > .screen{transform:scale(0.76923);transform-origin:top left;}
+@media (max-width:560px){
+  .cl-phone{width:264px;height:571px;}
+  .cl-phone > .screen{transform:scale(0.67692);}
+}

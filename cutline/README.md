@@ -79,11 +79,21 @@ This review build uses React + in-browser Babel so the A/B/wordmark/motif
 locked defaults (**Beta · Full · Plate** / **Go-Live · Full · Plate**):
 
 ```
-Cut Line - Beta.html      ← Version A — ship now (TestFlight CTA)
-Cut Line - Go Live.html   ← Version B — ship later (App Store + Play)
-cutline.css               ← shared stylesheet (both reference it)
-fonts/                    ← Space Mono
+Cut Line - Beta.html         ← Version A — ship now (TestFlight CTA)
+Cut Line - Go Live.html      ← Version B — ship later (App Store + Play)
+cutline.css                  ← shared landing stylesheet (both reference it)
+cutline-screens.css          ← app-screen styles for the Screenshots section
+Cut Line - App Screens.html  ← studio reference for the 3 app screens (not served)
+cutline-mockups.jsx          ← React port of the 3 screens (if site goes React)
+fonts/                       ← Space Mono
 ```
+
+**Screenshots section.** The three phone mockups in the "Nine holes. One
+question." section are the real app flows — **New Session · Log a Putt · Make
+the Cut** — rendered live as HTML/CSS at native 390×844 and scaled crisply into
+a `.cl-phone` slot (no raster images). They live in `cutline-screens.css`, which
+both landing pages link **after** `cutline.css`. `Cut Line - App Screens.html`
+is the standalone studio view of the same three screens for design reference.
 
 These are **pure HTML + CSS — no React, no build step, no JavaScript.** Drop
 the matching HTML file + `cutline.css` + `fonts/` into the TTT site at
