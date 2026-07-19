@@ -1,238 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cut Line — Stop rolling balls. Start feeling the pressure. | Tee Time Trainer</title>
-  <meta name="description" content="Most putting practice is aimless. Cut Line scores every session against the PGA Tour — 5 minutes, 9 putts, tournament pressure on every one. A putting game from the Tee Time Trainer team. Now in beta." />
-  <link rel="canonical" href="https://teetimetrainer.app/cutline/" />
-  <meta name="theme-color" content="#467740" />
+  <meta name="description" content="Most putting practice is aimless. Cut Line scores every session against the PGA Tour — 5 minutes, 9 putts, tournament pressure on every one. Now with an Apple Watch companion. A putting game from the Tee Time Trainer team. In beta.">
+  <link rel="canonical" href="https://teetimetrainer.app/cutline/">
+  <meta name="theme-color" content="#052D19">
 
-  <!-- Icons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png" />
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-  <!-- Open Graph — WhatsApp, iMessage, Facebook, LinkedIn -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Cut Line" />
-  <meta property="og:title" content="Cut Line — Stop rolling balls. Start feeling the pressure." />
-  <meta property="og:description" content="5 minutes. 9 putts. Tournament pressure on every one. A putting game from the Tee Time Trainer team — now in beta on TestFlight." />
-  <meta property="og:url" content="https://teetimetrainer.app/cutline/" />
-  <meta property="og:image" content="https://teetimetrainer.app/cutline/og-cutline.png" />
-  <meta property="og:image:secure_url" content="https://teetimetrainer.app/cutline/og-cutline.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Cut Line — MAKE THE CUT nameplate on tournament felt green." />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tee Time Trainer">
+  <meta property="og:title" content="Cut Line — can you make the cut?">
+  <meta property="og:description" content="5 minutes. 9 putts. Tournament pressure on every one. Scored against the PGA Tour, now with an Apple Watch companion. Join the beta.">
+  <meta property="og:url" content="https://teetimetrainer.app/cutline/">
+  <meta property="og:image" content="https://teetimetrainer.app/cutline/og-cutline.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Cut Line — sink the putt. Dark tournament felt with a gold wordmark.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cut Line — can you make the cut?">
+  <meta name="twitter:description" content="5 minutes. 9 putts. Tournament pressure on every one. Join the beta.">
+  <meta name="twitter:image" content="https://teetimetrainer.app/cutline/og-cutline.png">
 
-  <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Cut Line — Stop rolling balls. Start feeling the pressure." />
-  <meta name="twitter:description" content="5 minutes. 9 putts. Tournament pressure on every one. Now in beta on TestFlight." />
-  <meta name="twitter:image" content="https://teetimetrainer.app/cutline/og-cutline.png" />
-
-  <link rel="stylesheet" href="cutline.css" />
-  <link rel="stylesheet" href="cutline-screens.css" />
+  <link rel="stylesheet" href="cutline.css">
 </head>
 <body>
-  <main>
-    <header class="hero" data-screen-label="Hero">
-      <div class="hero__inner">
-        <div class="hero__topbar">
-          <span class="hero__attrib">From the team at <a href="https://teetimetrainer.app" target="_blank" rel="noopener">Tee Time Trainer</a></span>
-          <span class="hero__betatag">Now in beta</span>
-        </div>
 
-      <h1 class="wordmark wm-plate">
-        <span class="wm-cell">
-          <span class="wm-kicker">MAKE THE CUT</span>
-          <span class="wm-line"><span class="cut">CUT</span> <span class="line">LINE</span></span>
-        </span>
-      </h1>
-        <p class="hero__headline">Stop rolling balls.<br/><em>Start feeling the pressure.</em></p>
-        <p class="hero__sub">5 minutes. 9 putts. Tournament pressure on every one. Can you make the cut?</p>
-        <a class="cta" href="https://testflight.apple.com/join/ngMJG36k" target="_blank" rel="noopener"><span class="tri">▶</span>JOIN THE BETA</a>
-        <p class="cta-sub">Free · iOS only for now · We want your honest feedback</p>
+  <!-- ============================== HERO ============================== -->
+  <header class="hero">
+    <p class="hero__attrib">
+      <a href="https://teetimetrainer.app">From the team at Tee Time Trainer</a>
+      <span class="chip">Now in beta</span>
+    </p>
 
-        <div class="hero__scorecard">
-          <div class="scorestrip">
-            <div class="scorestrip__head"><span class="ttl">Today · 9 holes · 42 ft green</span><span class="made">Made the cut</span></div>
-            <div class="scoregrid"><div class="scorecell"><div class="n">1</div><div class="v ">2</div></div><div class="scorecell"><div class="n">2</div><div class="v made">1</div></div><div class="scorecell"><div class="n">3</div><div class="v ">2</div></div><div class="scorecell"><div class="n">4</div><div class="v ">2</div></div><div class="scorecell"><div class="n">5</div><div class="v made">1</div></div><div class="scorecell"><div class="n">6</div><div class="v miss">3</div></div><div class="scorecell"><div class="n">7</div><div class="v ">2</div></div><div class="scorecell"><div class="n">8</div><div class="v made">1</div></div><div class="scorecell"><div class="n">9</div><div class="v ">2</div></div><div class="scorecell tot"><div class="n">TOT</div><div class="v">16</div></div></div>
-          </div>
-        </div>
-      </div>
-    </header>
+    <div class="lockup" aria-label="The Cut Line — sink the putt">
+      <span class="lockup__the">THE</span>
+      <span class="lockup__word">CUT</span>
+      <span class="lockup__rule" aria-hidden="true"></span>
+      <span class="lockup__word">LINE</span>
+      <span class="lockup__tag">SINK&nbsp;THE&nbsp;PUTT</span>
+    </div>
 
-    <section class="section section--cream-2" data-screen-label="Screenshots">
-      <div class="cl-wrap">
-        <div class="shots-head">
-          <div class="section__kicker">The gameplay loop</div>
-          <h2 class="section__title">Nine holes. One question.</h2>
-          <p class="section__lead">Set your distance, lag nine putts, and see if you beat the Tour. The whole round takes about five minutes.</p>
-        </div>
-        <div class="shots">
-          <div class="shot">
-            <div class="cl-phone">
-              <div class="screen" data-screen-label="New Session">
-                <div class="sb">
-                  <span class="sb__time">5:01</span>
-                  <span class="sb__right">
-                    <span class="sb__dots"><i></i><i></i><i></i><i></i></span>
-                    <svg width="17" height="13" viewBox="0 0 17 13" fill="none"><path d="M8.5 2.2c2.2 0 4.2.85 5.7 2.25l1.05-1.1A9.6 9.6 0 0 0 8.5.6 9.6 9.6 0 0 0 1.75 3.35L2.8 4.45A8.1 8.1 0 0 1 8.5 2.2Z" fill="#FFF8E3"/><path d="M8.5 5.2c1.4 0 2.65.55 3.6 1.45l1.05-1.1A7 7 0 0 0 8.5 3.6a7 7 0 0 0-4.65 1.95L4.9 6.65A5.5 5.5 0 0 1 8.5 5.2Z" fill="#FFF8E3"/><path d="M8.5 8.2c.62 0 1.18.25 1.6.66l-1.6 1.69-1.6-1.69c.42-.41.98-.66 1.6-.66Z" fill="#FFF8E3"/></svg>
-                    <svg width="26" height="13" viewBox="0 0 26 13" fill="none"><rect x="1" y="1.5" width="21" height="10" rx="2.6" stroke="#FFF8E3" stroke-opacity="0.5" stroke-width="1.2"/><rect x="2.6" y="3.1" width="17.5" height="6.8" rx="1.4" fill="#FFF8E3"/><path d="M23.6 4.5v4c.8-.3 1.3-1 1.3-2s-.5-1.7-1.3-2Z" fill="#FFF8E3" fill-opacity="0.6"/></svg>
-                  </span>
-                </div>
-                <div class="body">
-                  <div class="nav">
-                    <button class="nav__back"><span class="nav__chev">‹</span></button>
-                    <div class="nav__title">New Session</div>
-                    <span></span>
-                  </div>
-                  <div class="s1" style="flex:1;display:flex;flex-direction:column;">
-                    <h2 class="s1__q">Longest putt you can hit on this green?</h2>
-                    <div class="fill"></div>
-                    <div class="s1__opts">
-                      <div class="opt">25 FT</div>
-                      <div class="opt">30 FT</div>
-                      <div class="opt">40 FT</div>
-                      <div class="opt">50 FT</div>
-                      <div class="opt">60 FT</div>
-                      <div class="opt opt--on">70 FT</div>
-                    </div>
-                    <div class="s1__steps">Approximately 23 steps</div>
-                    <div class="fill"></div>
-                    <button class="btn-primary"><span class="tri">▶</span> Start Session</button>
-                  </div>
-                </div>
-              </div>
-            </div><div class="shot__step"><span class="num">01</span>Pick your green</div></div>
-          <div class="shot">
-            <div class="cl-phone">
-              <div class="screen" data-screen-label="Log a Putt">
-                <div class="sb">
-                  <span class="sb__time">5:01</span>
-                  <span class="sb__right">
-                    <span class="sb__dots"><i></i><i></i><i></i><i></i></span>
-                    <svg width="17" height="13" viewBox="0 0 17 13" fill="none"><path d="M8.5 2.2c2.2 0 4.2.85 5.7 2.25l1.05-1.1A9.6 9.6 0 0 0 8.5.6 9.6 9.6 0 0 0 1.75 3.35L2.8 4.45A8.1 8.1 0 0 1 8.5 2.2Z" fill="#FFF8E3"/><path d="M8.5 5.2c1.4 0 2.65.55 3.6 1.45l1.05-1.1A7 7 0 0 0 8.5 3.6a7 7 0 0 0-4.65 1.95L4.9 6.65A5.5 5.5 0 0 1 8.5 5.2Z" fill="#FFF8E3"/><path d="M8.5 8.2c.62 0 1.18.25 1.6.66l-1.6 1.69-1.6-1.69c.42-.41.98-.66 1.6-.66Z" fill="#FFF8E3"/></svg>
-                    <svg width="26" height="13" viewBox="0 0 26 13" fill="none"><rect x="1" y="1.5" width="21" height="10" rx="2.6" stroke="#FFF8E3" stroke-opacity="0.5" stroke-width="1.2"/><rect x="2.6" y="3.1" width="17.5" height="6.8" rx="1.4" fill="#FFF8E3"/><path d="M23.6 4.5v4c.8-.3 1.3-1 1.3-2s-.5-1.7-1.3-2Z" fill="#FFF8E3" fill-opacity="0.6"/></svg>
-                  </span>
-                </div>
-                <div class="body">
-                  <div class="nav">
-                    <button class="nav__close"><span class="nav__x">✕</span></button>
-                    <div class="nav__title">Putt 1 / 9</div>
-                    <span></span>
-                  </div>
-                  <div class="s2" style="flex:1;display:flex;flex-direction:column;">
-                    <div class="prog">
-                      <span class="cur"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                    </div>
-                    <div class="s2__dist">
-                      <span class="s2__num">14</span><span class="s2__ft">FT</span>
-                    </div>
-                    <div class="s2__steps">Approximately 5 steps</div>
-                    <div class="s2__choices">
-                      <div class="choice"><div class="choice__chip">1</div><div class="choice__lbl">Made It</div></div>
-                      <div class="choice choice--two"><div class="choice__chip">2</div><div class="choice__lbl">Two Putt</div></div>
-                      <div class="choice choice--three"><div class="choice__chip">3+</div><div class="choice__lbl">Three or More</div></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><div class="shot__step"><span class="num">02</span>Lag your putt</div></div>
-          <div class="shot">
-            <div class="cl-phone">
-              <div class="screen" data-screen-label="Make the Cut">
-                <div class="sb">
-                  <span class="sb__time">5:01</span>
-                  <span class="sb__right">
-                    <span class="sb__dots"><i></i><i></i><i></i><i></i></span>
-                    <svg width="17" height="13" viewBox="0 0 17 13" fill="none"><path d="M8.5 2.2c2.2 0 4.2.85 5.7 2.25l1.05-1.1A9.6 9.6 0 0 0 8.5.6 9.6 9.6 0 0 0 1.75 3.35L2.8 4.45A8.1 8.1 0 0 1 8.5 2.2Z" fill="#FFF8E3"/><path d="M8.5 5.2c1.4 0 2.65.55 3.6 1.45l1.05-1.1A7 7 0 0 0 8.5 3.6a7 7 0 0 0-4.65 1.95L4.9 6.65A5.5 5.5 0 0 1 8.5 5.2Z" fill="#FFF8E3"/><path d="M8.5 8.2c.62 0 1.18.25 1.6.66l-1.6 1.69-1.6-1.69c.42-.41.98-.66 1.6-.66Z" fill="#FFF8E3"/></svg>
-                    <svg width="26" height="13" viewBox="0 0 26 13" fill="none"><rect x="1" y="1.5" width="21" height="10" rx="2.6" stroke="#FFF8E3" stroke-opacity="0.5" stroke-width="1.2"/><rect x="2.6" y="3.1" width="17.5" height="6.8" rx="1.4" fill="#FFF8E3"/><path d="M23.6 4.5v4c.8-.3 1.3-1 1.3-2s-.5-1.7-1.3-2Z" fill="#FFF8E3" fill-opacity="0.6"/></svg>
-                  </span>
-                </div>
-                <div class="body">
-                  <div class="s3" style="flex:1;">
-                    <div class="nav">
-                      <button class="nav__close"><span class="nav__x">✕</span><span class="nav__closetxt">Close</span></button>
-                    </div>
-                    <div class="card">
-                      <div class="score">
-                        <div class="score__k">Your Score</div>
-                        <div class="score__n">14</div>
-                        <div class="score__u">Putts</div>
-                      </div>
-                      <div class="cut-banner">
-                        <div class="cut-banner__main"><span>✓</span> You Made the Cut</div>
-                        <div class="cut-banner__streak">Cut Streak · 2</div>
-                      </div>
-                      <div class="sc">
-                        <div class="sc__top"><span>Scorecard</span><span>Max Distance: 30 FT</span></div>
-                        <div class="sc__grid">
-                          <div class="sc__col"><span class="sc__i">1</span><span class="sc__v circ">26</span></div>
-                          <div class="sc__col"><span class="sc__i">2</span><span class="sc__v">12</span></div>
-                          <div class="sc__col"><span class="sc__i">3</span><span class="sc__v circ">15</span></div>
-                          <div class="sc__col"><span class="sc__i">4</span><span class="sc__v box">28</span></div>
-                          <div class="sc__col"><span class="sc__i">5</span><span class="sc__v">24</span></div>
-                          <div class="sc__col"><span class="sc__i">6</span><span class="sc__v circ">30</span></div>
-                          <div class="sc__col"><span class="sc__i">7</span><span class="sc__v circ">21</span></div>
-                          <div class="sc__col"><span class="sc__i">8</span><span class="sc__v">13</span></div>
-                          <div class="sc__col"><span class="sc__i">9</span><span class="sc__v circ">16</span></div>
-                        </div>
-                        <div class="sc__cap">Distance in Feet</div>
-                      </div>
-                      <div class="plate">
-                        <div class="plate__k">Make the Cut</div>
-                        <div class="plate__wm"><span class="cut">CUT</span> <span class="line">LINE</span></div>
-                      </div>
-                    </div>
-                    <div class="fill"></div>
-                    <button class="btn-primary">Done</button>
-                    <button class="btn-share">Share ↗</button>
-                  </div>
-                </div>
-              </div>
-            </div><div class="shot__step"><span class="num">03</span>Make the cut?</div></div>
-        </div>
-      </div>
-    </section>
+    <h1>Stop rolling balls.<br><em>Start feeling the pressure.</em></h1>
+    <p class="hero__sub">5 minutes. 9 putts. Tournament pressure on every one.<br>Can you make the cut?</p>
 
-    <section class="section section--ask" data-screen-label="The ask">
-      <div class="cl-wrap">
-        <div class="ask">
-          <div class="section__kicker">The ask</div>
-          <p class="ask__body">Cut Line is in beta. We need real golfers playing it, finding the rough edges, telling us what to fix. If you've practiced putting and felt like you were just rolling balls without a goal — <b>this app was built for you.</b> We'd love to know if we got it right.</p>
-          <div class="ask__sign">— The Tee Time Trainer team</div>
-        </div>
-      </div>
-    </section>
-    <section class="section section--cta2" data-screen-label="Second CTA">
-      <div class="cl-wrap">
-        <div class="cta2">
-          <h2 class="cta2__title">Every putt counts. Every miss matters. <em>Can you make the cut?</em></h2>
-          <a class="cta" href="https://testflight.apple.com/join/ngMJG36k" target="_blank" rel="noopener"><span class="tri">▶</span>JOIN THE TESTFLIGHT BETA</a>
-          <p class="cta-sub">Free · iOS only for now · We want your honest feedback</p>
-        </div>
-      </div>
-    </section>
+    <p class="cta-wrap">
+      <a class="cta" href="https://testflight.apple.com/join/ngMJG36k">Join the beta</a>
+      <span class="cta-sub">Free · iOS · Apple&nbsp;Watch companion included</span>
+    </p>
+  </header>
 
-    <footer class="footer" data-screen-label="Footer">
-      <div class="cl-wrap">
-        <div class="footer__grid">
-          <div class="footer__brand">
-            <div class="footer__wm">CUT <span class="line">LINE</span></div>
-            <div class="footer__by">A <a href="https://teetimetrainer.app" target="_blank" rel="noopener">Tee Time Trainer</a> app</div>
-          </div>
-          <div class="footer__links">
-            <a class="footer__link" href="https://www.instagram.com/teetimetrainer/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg> Instagram</a>
-            <a class="footer__link" href="https://discord.gg/8u7NTxfmYW" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 6c-1-.5-3-1-5-1l-.3.5c2 .3 3 .8 4 1.3-3-1.5-7-1.5-10 0 1-.5 2-1 4-1.3L12 5c-2 0-4 .5-5 1C5 8 4 13 4 17c1 1 3 2 5 2l.7-1c-1.2-.3-2.5-.8-3.7-1.8 3 2 8 2 12 0-1.2 1-2.5 1.5-3.7 1.8L15 19c2 0 4-1 5-2 0-4-1-9-3-11zM9 15c-1 0-2-1-2-2s1-2 2-2 2 1 2 2-1 2-2 2zm6 0c-1 0-2-1-2-2s1-2 2-2 2 1 2 2-1 2-2 2z"/></svg> Discord</a>
-            <a class="footer__link" href="https://www.youtube.com/@TeeTimeTrainer" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg> YouTube</a>
-          </div>
-        </div>
-        <div class="footer__legal"><span>© 2026 Bossa Nova Solutions</span><span>Cut Line · A Tee Time Trainer app</span></div>
+  <!-- ========================= GAMEPLAY LOOP ========================= -->
+  <section class="section">
+    <p class="kicker">The gameplay loop</p>
+    <h2>Nine holes. One question.</h2>
+    <p class="lead">Set your distance, lag nine putts, and see if you beat the Tour.
+       The whole round takes about five minutes.</p>
+
+    <div class="steps">
+      <figure class="step">
+        <figcaption><span class="step__num step__num--made">01</span> Lag your putt</figcaption>
+        <div class="phone"><img src="img/screen-putt.png" alt="Cut Line putt screen: a 4-foot putt with Made It, Two Putt and 3 or More result bands" loading="lazy"></div>
+      </figure>
+      <figure class="step">
+        <figcaption><span class="step__num step__num--gold">02</span> Watch it roll</figcaption>
+        <div class="phone"><img src="img/screen-postshot.png" alt="Cut Line post-shot screen: the ball rolling toward the hole, plus 0.7 strokes gained, making the cut" loading="lazy"></div>
+      </figure>
+      <figure class="step">
+        <figcaption><span class="step__num step__num--miss">03</span> Build your streak</figcaption>
+        <div class="phone"><img src="img/screen-home.png" alt="Cut Line home screen: streak of 2, nine cuts made in twenty rounds played" loading="lazy"></div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ========================= APPLE WATCH =========================== -->
+  <section class="section">
+    <div class="watchpanel">
+      <div class="watchpanel__copy">
+        <p class="kicker">New · Apple Watch</p>
+        <h2>On your wrist.</h2>
+        <p class="lead lead--left">Log putts from your wrist — your phone keeps score.
+           The watch stays awake for your whole session, confirms every putt before it counts,
+           and shows your strokes gained the moment the ball drops. No separate sign-in, ever.</p>
       </div>
-    </footer>
-  </main>
+      <div class="watchpanel__shots">
+        <div class="watchframe"><img src="img/watch-putt.png" alt="Apple Watch showing putt 1 of 9, four feet, with a Done button" loading="lazy"></div>
+        <div class="watchframe"><img src="img/watch-sg.png" alt="Apple Watch showing plus 0.4 strokes gained, making the cut" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== WEEKLY CHALLENGES ====================== -->
+  <section class="section">
+    <p class="kicker">Beat the field</p>
+    <h2>Every week is a new tournament.</h2>
+    <div class="cards">
+      <div class="card"><h3>A new challenge<br>every week</h3><p>Fresh distances, fresh pressure. The course changes every Monday.</p></div>
+      <div class="card"><h3>Three attempts.<br>No takebacks.</h3><p>Commit to a round and it counts. Just like a scorecard should.</p></div>
+      <div class="card"><h3>One leaderboard.<br>Beat the field.</h3><p>Your best round against everyone else's. Strokes gained settles it.</p></div>
+    </div>
+  </section>
+
+  <!-- ============================ THE ASK ============================ -->
+  <section class="section">
+    <div class="ask">
+      <p class="kicker">The ask</p>
+      <p>Cut Line is in beta. We need real golfers playing it, finding the rough edges,
+         telling us what to fix. If you've practiced putting and felt like you were just
+         rolling balls without a goal — <strong>this app was built for you.</strong>
+         We'd love to know if we got it right.</p>
+      <p class="ask__sig">— The Tee Time Trainer team</p>
+    </div>
+  </section>
+
+  <!-- ============================= CTA 2 ============================= -->
+  <section class="section section--cta2">
+    <h2>Every putt counts. Every miss matters.<br><em>Can you make the cut?</em></h2>
+    <p class="cta-wrap">
+      <a class="cta" href="https://testflight.apple.com/join/ngMJG36k">Join the TestFlight beta</a>
+      <span class="cta-sub">Free · iOS · We want your honest feedback</span>
+    </p>
+  </section>
+
+  <!-- ============================= FOOTER ============================ -->
+  <footer class="footer">
+    <p class="footer__mark">CUT LINE</p>
+    <p class="footer__from">A Tee Time Trainer app</p>
+    <nav class="footer__links">
+      <a href="https://teetimetrainer.app">Tee Time Trainer</a>
+      <a href="https://www.instagram.com/teetimetrainer/">Instagram</a>
+      <a href="https://discord.gg/8u7NTxfmYW">Discord</a>
+      <a href="https://www.youtube.com/@TeeTimeTrainer">YouTube</a>
+    </nav>
+    <p class="footer__legal">© 2026 Bossa Nova Solutions</p>
+  </footer>
+
 </body>
 </html>

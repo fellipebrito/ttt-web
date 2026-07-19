@@ -1,69 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- OG image source, 1200x630. Render:
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+    --headless=new --screenshot=og-cutline.png --window-size=1200,630 \
+    --hide-scrollbars "file://$(pwd)/og.html"
+-->
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<title>Cut Line — OG card</title>
+<meta charset="utf-8">
 <style>
-  @font-face{font-family:"Space Mono";font-style:normal;font-weight:400;font-display:block;src:url("fonts/SpaceMono_400Regular.ttf") format("truetype");}
-  @font-face{font-family:"Space Mono";font-style:normal;font-weight:700;font-display:block;src:url("fonts/SpaceMono_700Bold.ttf") format("truetype");}
-  :root{
-    --cream:#FFF8E3; --felt:#467740; --felt-900:#1F3A1B;
-    --gold:#FFD66E; --gold-deep:#E8B123; --ink:#2A2622; --made:#2D8E2A;
-    --mono:"Space Mono",ui-monospace,Menlo,Consolas,monospace;
+  @font-face { font-family: "BBH Bogle";  src: url("fonts/BBHBogle_400.ttf");  }
+  @font-face { font-family: "BBH Bartle"; src: url("fonts/BBHBartle_400.ttf"); }
+  @font-face { font-family: "DM Sans";    src: url("fonts/DMSans_400.ttf");    }
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 630px; overflow: hidden;
+    background: linear-gradient(160deg, #052D19 0%, #0A4728 100%);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-family: "DM Sans", sans-serif; color: #FEFBEE;
   }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html,body{width:1200px;height:630px;}
-  body{
-    font-family:var(--mono); background:var(--felt); color:var(--cream);
-    position:relative; overflow:hidden;
-    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
-  }
-  /* felt texture: faint dashed fairway lines */
-  body::before{
-    content:""; position:absolute; inset:0;
-    background-image:repeating-linear-gradient(90deg, transparent 0 78px, rgba(255,248,227,0.04) 78px 80px);
-  }
-  .card{
-    position:relative; height:100%; display:flex; flex-direction:column;
-    align-items:center; justify-content:space-between; text-align:center;
-    padding:42px 64px 50px;
-  }
-  /* top brand bar */
-  .top{width:100%;display:flex;align-items:center;justify-content:space-between;}
-  .attrib{font-size:15px;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;color:var(--gold);}
-  .attrib b{color:var(--cream);font-weight:700;border-bottom:2px solid rgba(255,248,227,0.4);}
-  .beta{font-size:15px;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;color:var(--ink);
-    background:var(--gold);border:3px solid var(--ink);padding:8px 16px;box-shadow:3px 3px 0 var(--felt-900);}
-  /* plate nameplate */
-  .plate{display:inline-flex;flex-direction:column;align-items:center;
-    background:var(--cream);color:var(--ink);border:5px solid var(--ink);
-    box-shadow:9px 9px 0 var(--ink);padding:18px 52px 22px;}
-  .kicker{font-size:19px;letter-spacing:0.42em;text-transform:uppercase;font-weight:700;color:var(--made);
-    border-bottom:3px solid var(--ink);padding-bottom:10px;margin-bottom:10px;width:100%;}
-  .wm{font-weight:700;letter-spacing:0.14em;line-height:0.92;font-size:118px;}
-  .wm .cut{color:var(--ink);}
-  .wm .line{color:var(--gold-deep);}
-  /* copy */
-  .copy{display:flex;flex-direction:column;align-items:center;gap:14px;}
-  .headline{font-weight:700;font-size:44px;line-height:1.08;letter-spacing:-0.01em;color:var(--cream);}
-  .headline em{font-style:normal;color:var(--gold);}
-  .sub{font-size:23px;line-height:1.4;color:var(--cream);opacity:0.92;}
+  .the  { font-family: "BBH Bartle"; font-size: 26px; letter-spacing: 0.5em; text-indent: 0.5em; }
+  .word { font-family: "BBH Bogle"; font-size: 150px; line-height: 0.92; color: #F3D653;
+          text-shadow: 0 6px 30px rgba(0,0,0,0.4); }
+  .rule { width: 430px; height: 6px; background: #F3D653; border-radius: 3px; margin: 12px 0; }
+  .tag  { font-family: "BBH Bartle"; font-size: 22px; letter-spacing: 0.42em; text-indent: 0.42em; margin-top: 20px; }
+  .sub  { margin-top: 34px; font-size: 26px; color: rgba(254,251,238,0.75); }
+  .sub b { color: #F3D653; font-weight: 400; }
 </style>
 </head>
 <body>
-  <div class="card">
-    <div class="top">
-      <span class="attrib">From the team at <b>Tee Time Trainer</b></span>
-      <span class="beta">Now in beta</span>
-    </div>
-    <div class="plate">
-      <span class="kicker">Make the cut</span>
-      <span class="wm"><span class="cut">CUT</span> <span class="line">LINE</span></span>
-    </div>
-    <div class="copy">
-      <div class="headline">Stop rolling balls. <em>Start feeling the pressure.</em></div>
-      <div class="sub">5 minutes · 9 putts · Tournament pressure on every one.</div>
-    </div>
-  </div>
+  <div class="the">THE</div>
+  <div class="word">CUT</div>
+  <div class="rule"></div>
+  <div class="word">LINE</div>
+  <div class="tag">SINK&nbsp;THE&nbsp;PUTT</div>
+  <div class="sub">5 minutes · 9 putts · <b>Can you make the cut?</b></div>
 </body>
 </html>
