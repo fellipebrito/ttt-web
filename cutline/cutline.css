@@ -239,27 +239,24 @@ h3 { font-family: var(--heading); font-weight: 400; font-size: 22px; line-height
 }
 .watchframe img { border-radius: 34px; width: 100%; }
 
-/* ---- Range Session panel (mirrors the watch panel, plain glass) ---- */
+/* ---- Range Session panel (plain glass, centered — big phone shots) ---- */
 .rangepanel {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 40px;
-  align-items: center;
-  text-align: left;
   background: var(--glass);
   border: 1px solid var(--glass-border);
   border-radius: var(--r-card);
-  padding: 48px;
+  padding: 48px 32px;
+  text-align: center;
 }
 .rangepanel h2 { font-size: clamp(30px, 4.6vw, 42px); }
-.rangepanel .lead--left strong { color: var(--gold); font-weight: 500; }
+.rangepanel .lead strong { color: var(--gold); font-weight: 500; }
 .rangepanel__shots {
   display: flex;
-  gap: 20px;
+  gap: 32px;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 44px;
 }
-.rangepanel__shots .phone { width: min(220px, 44%); margin: 0; }
+.rangepanel__shots .phone { width: min(300px, 80%); margin: 0; }
 
 /* ---- Feature cards ---- */
 .cards {
@@ -313,8 +310,7 @@ h3 { font-family: var(--heading); font-weight: 400; font-size: 22px; line-height
   .cards { grid-template-columns: 1fr; }
   .watchpanel { grid-template-columns: 1fr; padding: 32px 24px; text-align: center; }
   .watchpanel .lead--left { margin: 14px auto 0; }
-  .rangepanel { grid-template-columns: 1fr; padding: 32px 24px; text-align: center; }
-  .rangepanel .lead--left { margin: 14px auto 0; }
+  .rangepanel { padding: 32px 20px; }
   .section { padding: 56px 20px; }
   .hero { padding-top: 40px; }
 }
