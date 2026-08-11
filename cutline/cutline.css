@@ -239,24 +239,13 @@ h3 { font-family: var(--heading); font-weight: 400; font-size: 22px; line-height
 }
 .watchframe img { border-radius: 34px; width: 100%; }
 
-/* ---- Range Session panel (plain glass, centered — big phone shots) ---- */
-.rangepanel {
-  background: var(--glass);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--r-card);
-  padding: 48px 32px;
-  text-align: center;
+/* ---- Step body line (under each session-step screenshot) ---- */
+.step__body {
+  color: var(--cream-muted);
+  font-size: 15px;
+  max-width: 300px;
+  margin: 16px auto 0;
 }
-.rangepanel h2 { font-size: clamp(30px, 4.6vw, 42px); }
-.rangepanel .lead strong { color: var(--gold); font-weight: 500; }
-.rangepanel__shots {
-  display: flex;
-  gap: 32px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 44px;
-}
-.rangepanel__shots .phone { width: min(300px, 80%); margin: 0; }
 
 /* ---- Feature cards ---- */
 .cards {
@@ -273,6 +262,10 @@ h3 { font-family: var(--heading); font-weight: 400; font-size: 22px; line-height
   text-align: left;
 }
 .card p { color: var(--cream-muted); font-size: 15px; margin-top: 12px; }
+.card > p:first-child { margin-top: 0; }
+/* Two-up variant (Range / Putting) with a phone shot inside each card */
+.cards--two { grid-template-columns: repeat(2, 1fr); max-width: 880px; margin-left: auto; margin-right: auto; }
+.card .phone { max-width: 240px; margin: 24px auto 0; }
 
 /* ---- The ask ---- */
 .ask {
@@ -310,7 +303,6 @@ h3 { font-family: var(--heading); font-weight: 400; font-size: 22px; line-height
   .cards { grid-template-columns: 1fr; }
   .watchpanel { grid-template-columns: 1fr; padding: 32px 24px; text-align: center; }
   .watchpanel .lead--left { margin: 14px auto 0; }
-  .rangepanel { padding: 32px 20px; }
   .section { padding: 56px 20px; }
   .hero { padding-top: 40px; }
 }

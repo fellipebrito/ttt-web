@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cut Line — Stop rolling balls. Start feeling the pressure. | Tee Time Trainer</title>
-  <meta name="description" content="Most putting practice is aimless. Cut Line scores every session against the PGA Tour — 5 minutes, 9 putts, tournament pressure on every one. Now with an Apple Watch companion. A putting game from the Tee Time Trainer team. In beta.">
+  <title>Cut Line — Press play. Practice like you're being coached. | Tee Time Trainer</title>
+  <meta name="description" content="Cut Line runs your practice session — paced, graded, two taps max per shot. Range and putting, scored against the PGA Tour, with an Apple Watch companion. Join the beta.">
   <link rel="canonical" href="https://teetimetrainer.app/cutline/">
   <meta name="theme-color" content="#052D19">
 
@@ -15,19 +15,19 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Tee Time Trainer">
-  <meta property="og:title" content="Cut Line — can you make the cut?">
-  <meta property="og:description" content="5 minutes. 9 putts. Tournament pressure on every one. Scored against the PGA Tour, now with an Apple Watch companion. Join the beta.">
+  <meta property="og:title" content="Cut Line — press play, practice coached.">
+  <meta property="og:description" content="Cut Line runs your practice session — paced, graded, two taps max per shot. Range and putting, scored against the PGA Tour, with an Apple Watch companion. Join the beta.">
   <meta property="og:url" content="https://teetimetrainer.app/cutline/">
   <meta property="og:image" content="https://teetimetrainer.app/cutline/og-cutline.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="The Cut Line — sink the putt. Dark tournament felt with a gold wordmark.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Cut Line — can you make the cut?">
-  <meta name="twitter:description" content="5 minutes. 9 putts. Tournament pressure on every one. Join the beta.">
+  <meta name="twitter:title" content="Cut Line — press play, practice coached.">
+  <meta name="twitter:description" content="Cut Line runs your practice session — paced, graded, two taps max per shot. Range and putting, scored against the PGA Tour, with an Apple Watch companion. Join the beta.">
   <meta name="twitter:image" content="https://teetimetrainer.app/cutline/og-cutline.png">
 
-  <link rel="stylesheet" href="cutline.css?v=2">
+  <link rel="stylesheet" href="cutline.css?v=3">
 </head>
 <body>
 
@@ -41,8 +41,8 @@
     <img class="lockup-img" src="img/logo.png" width="544" height="272"
          alt="The Cut Line — sink the putt">
 
-    <h1>Stop rolling balls.<br><em>Start feeling the pressure.</em></h1>
-    <p class="hero__sub">5 minutes. 9 putts. Tournament pressure on every one.<br>Can you make the cut?</p>
+    <h1>Press play.<br><em>Practice like you're being coached.</em></h1>
+    <p class="hero__sub">No planning. No typing. No deciding what to work on.<br>Cut Line runs your session — paced, graded, two taps max per shot.</p>
 
     <p class="cta-wrap">
       <a class="cta" href="https://testflight.apple.com/join/ngMJG36k">Join the beta</a>
@@ -50,26 +50,51 @@
     </p>
   </header>
 
-  <!-- ========================= GAMEPLAY LOOP ========================= -->
+  <!-- =========================== THE SESSION ========================= -->
   <section class="section">
-    <p class="kicker">The gameplay loop</p>
-    <h2>Nine holes. One question.</h2>
-    <p class="lead">Set your distance, lag nine putts, and see if you beat the Tour.
-       The whole round takes about five minutes.</p>
+    <p class="kicker">How a session feels</p>
+    <h2>Press play. Follow. Get your verdict.</h2>
+    <p class="lead">You show up. Cut Line does the thinking.</p>
 
     <div class="steps">
       <figure class="step">
-        <figcaption><span class="step__num step__num--made">01</span> Lag your putt</figcaption>
+        <figcaption><span class="step__num step__num--made">01</span> Two taps per shot</figcaption>
         <div class="phone"><img src="img/screen-putt.png" alt="Cut Line putt screen: a 4-foot putt with Made It, Two Putt and 3 or More result bands" loading="lazy"></div>
+        <p class="step__body">Every input is a tap. Distance set, result logged. Nothing to type, ever.</p>
       </figure>
       <figure class="step">
-        <figcaption><span class="step__num step__num--gold">02</span> Watch it roll</figcaption>
+        <figcaption><span class="step__num step__num--gold">02</span> Scored as you go</figcaption>
         <div class="phone"><img src="img/screen-postshot.png" alt="Cut Line post-shot screen: the ball rolling toward the hole, plus 0.7 strokes gained, making the cut" loading="lazy"></div>
+        <p class="step__body">Every shot measured in strokes gained — the same math the Tour uses.</p>
       </figure>
       <figure class="step">
-        <figcaption><span class="step__num step__num--miss">03</span> Build your streak</figcaption>
+        <figcaption><span class="step__num step__num--miss">03</span> A verdict, not a spreadsheet</figcaption>
         <div class="phone"><img src="img/screen-home.png" alt="Cut Line home screen: streak of 2, nine cuts made in twenty rounds played" loading="lazy"></div>
+        <p class="step__body">Made the cut or missed it. Build your streak. Done in minutes.</p>
       </figure>
+    </div>
+  </section>
+
+  <!-- ==================== TWO SESSIONS, ONE HABIT ==================== -->
+  <section class="section">
+    <p class="kicker">Range or green</p>
+    <h2>Two sessions. One habit.</h2>
+    <div class="cards cards--two">
+      <div class="card">
+        <h3>The Range Session</h3>
+        <p>25 minutes, block by block. The app paces you through a structured
+           plan — you hit, tap the grade, move on. At the end: an A–D grade
+           and your own Range Cut line to beat next time.</p>
+        <!-- Spec asked for img/range-1.png placeholder; real capture from
+             the simulator already exists — see report. -->
+        <div class="phone"><img src="img/range-plan.png" alt="Cut Line range plan screen: four timed blocks — warm-up, wedges, irons, driver — with a Start Session button" loading="lazy"></div>
+      </div>
+      <div class="card">
+        <h3>The Putting Game</h3>
+        <p>5 minutes, 9 putts, tournament pressure on every one. Lag it close,
+           tap the result, see if you beat the Tour.</p>
+        <div class="phone"><img src="img/screen-putt.png" alt="Cut Line putt screen: a 4-foot putt with Made It, Two Putt and 3 or More result bands" loading="lazy"></div>
+      </div>
     </div>
   </section>
 
@@ -77,11 +102,11 @@
   <section class="section">
     <div class="watchpanel">
       <div class="watchpanel__copy">
-        <p class="kicker">New · Apple Watch</p>
-        <h2>On your wrist.</h2>
-        <p class="lead lead--left">Log putts from your wrist — your phone keeps score.
-           The watch stays awake for your whole session, confirms every putt before it counts,
-           and shows your strokes gained the moment the ball drops. No separate sign-in, ever.</p>
+        <p class="kicker">Apple Watch</p>
+        <h2>Leave the phone in the bag.</h2>
+        <p class="lead lead--left">Log every putt from your wrist — the watch stays awake
+           for the whole session, confirms each shot before it counts, and shows your
+           strokes gained the moment the ball drops. No separate sign-in, ever.</p>
       </div>
       <div class="watchpanel__shots">
         <div class="watchframe"><img src="img/watch-putt.png" alt="Apple Watch showing putt 1 of 9, four feet, with a Done button" loading="lazy"></div>
@@ -90,33 +115,14 @@
     </div>
   </section>
 
-  <!-- ========================= RANGE SESSION ========================= -->
+  <!-- ======================= THE GRADE IS REAL ======================= -->
   <section class="section">
-    <div class="rangepanel">
-      <div class="rangepanel__copy">
-        <p class="kicker">New · Range Session</p>
-        <h2>Take the cut to the range.</h2>
-        <p class="lead">A 25-minute practice plan that runs itself.
-           Warm-up, wedges, irons, driver — timed blocks, prescribed targets,
-           no decisions to make. Grade every shot A to D with one tap.
-           When the timer hits zero, the session is scored against your own
-           Range Cut line: make it or miss it, <strong>verdict on the spot.</strong></p>
-      </div>
-      <div class="rangepanel__shots">
-        <div class="phone"><img src="img/range-plan.png" alt="Cut Line range plan screen: four timed blocks — warm-up, wedges, irons, driver — with today's focus and a Start Session button" loading="lazy"></div>
-        <div class="phone"><img src="img/range-verdict.png" alt="Cut Line range verdict screen: You made the cut, plus 4.0 versus the cut line, with strokes gained per block" loading="lazy"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================== WEEKLY CHALLENGES ====================== -->
-  <section class="section">
-    <p class="kicker">Beat the field</p>
-    <h2>Every week is a new tournament.</h2>
+    <p class="kicker">Honest scoring</p>
+    <h2>Graded against the PGA Tour.</h2>
     <div class="cards">
-      <div class="card"><h3>A new challenge<br>every week</h3><p>Fresh distances, fresh pressure. The course changes every Monday.</p></div>
-      <div class="card"><h3>Three attempts.<br>No takebacks.</h3><p>Commit to a round and it counts. Just like a scorecard should.</p></div>
-      <div class="card"><h3>One leaderboard.<br>Beat the field.</h3><p>Your best round against everyone else's. Strokes gained settles it.</p></div>
+      <div class="card"><p>Strokes gained on every shot — no vanity stats.</p></div>
+      <div class="card"><p>Made the cut or missed it — a verdict, not a chart.</p></div>
+      <div class="card"><p>A new tournament every Monday. Three attempts. One leaderboard.</p></div>
     </div>
   </section>
 
@@ -124,17 +130,16 @@
   <section class="section">
     <div class="ask">
       <p class="kicker">The ask</p>
-      <p>Cut Line is in beta. We need real golfers playing it, finding the rough edges,
-         telling us what to fix. If you've practiced putting and felt like you were just
-         rolling balls without a goal — <strong>this app was built for you.</strong>
-         We'd love to know if we got it right.</p>
+      <p>Cut Line is in beta. We need real golfers playing it and telling us
+         what's wrong with it. If practice ever felt like rolling balls
+         without a goal — <strong>this was built for you.</strong></p>
       <p class="ask__sig">— The Tee Time Trainer team</p>
     </div>
   </section>
 
   <!-- ============================= CTA 2 ============================= -->
   <section class="section section--cta2">
-    <h2>Every putt counts. Every miss matters.<br><em>Can you make the cut?</em></h2>
+    <h2>Show up. Press play. <em>Get better.</em></h2>
     <p class="cta-wrap">
       <a class="cta" href="https://testflight.apple.com/join/ngMJG36k">Join the TestFlight beta</a>
       <span class="cta-sub">Free · iOS · We want your honest feedback</span>
