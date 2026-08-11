@@ -239,6 +239,44 @@ h3 { font-family: var(--heading); font-weight: 400; font-size: 22px; line-height
 }
 .watchframe img { border-radius: 34px; width: 100%; }
 
+/* ---- Range Session panel (mirrors the watch panel, plain glass) ---- */
+.rangepanel {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  text-align: left;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--r-card);
+  padding: 48px;
+}
+.rangepanel h2 { font-size: clamp(30px, 4.6vw, 42px); }
+.rangepanel .lead--left strong { color: var(--gold); font-weight: 500; }
+.rangepanel__shots {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.rangepanel__shots .phone { width: min(220px, 44%); margin: 0; }
+/* Placeholder until real range captures land in img/ */
+.phone--slot {
+  aspect-ratio: 9 / 18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: dashed;
+}
+.phone--slot span {
+  font-family: var(--display);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--cream-muted);
+}
+
 /* ---- Feature cards ---- */
 .cards {
   display: grid;
@@ -291,6 +329,8 @@ h3 { font-family: var(--heading); font-weight: 400; font-size: 22px; line-height
   .cards { grid-template-columns: 1fr; }
   .watchpanel { grid-template-columns: 1fr; padding: 32px 24px; text-align: center; }
   .watchpanel .lead--left { margin: 14px auto 0; }
+  .rangepanel { grid-template-columns: 1fr; padding: 32px 24px; text-align: center; }
+  .rangepanel .lead--left { margin: 14px auto 0; }
   .section { padding: 56px 20px; }
   .hero { padding-top: 40px; }
 }
