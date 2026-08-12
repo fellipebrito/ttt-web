@@ -305,4 +305,7 @@ h3 { font-family: var(--heading); font-weight: 400; font-size: 22px; line-height
   .watchpanel .lead--left { margin: 14px auto 0; }
   .section { padding: 56px 20px; }
   .hero { padding-top: 40px; }
+  /* Phone frames must not dwarf a phone-sized viewport */
+  .phone { max-width: 260px; }
+  .card .phone { max-width: 220px; }
 }
